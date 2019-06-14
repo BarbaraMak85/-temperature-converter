@@ -1,0 +1,105 @@
+    * {
+        margin: 0px;
+    }
+    
+    body {
+        background-image: url("../images/temp.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: #ffffff;
+    }
+    
+    .page-wrapper {
+        display: grid;
+        justify-content: end;
+        margin-right: 285px;
+        margin-top: 20px;
+        height: 100%;
+    }
+    
+    h1,
+    h2,
+    h3,
+    p {
+        font-family: 'Rationale', sans-serif;
+        margin-bottom: 10px;
+        margin-top: 2px;
+    }
+    
+    label {
+        margin: 4px;
+    }
+    
+    #input_wrapper p {
+        display: none;
+    }
+    
+    #input_wrapper.error input {
+        border-color: red;
+    }
+    
+    #input_wrapper.error p {
+        display: block;
+    }
+    
+    .temperature_form {
+        box-shadow: 5px 5px 10px #3399FF;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 98%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        justify-content: end;
+    }
+    
+    #input_wrapper {
+        box-shadow: 1px 1px 2px;
+        margin: 2px;
+        font-family: 'Rationale', sans-serif;
+        font-size: 20px;
+    }
+    
+    .element_up {
+        margin: 5px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 430px;
+        height: 185px;
+        font-family: 'Rationale', sans-serif;
+        font-size: 20px;
+    }
+    
+    .element_down {
+        margin: 5px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 416px;
+        height: 185px;
+        font-family: 'Rationale', sans-serif;
+        font-size: 20px;
+    }
+    
+    .element_result {
+        margin: 5px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 388px;
+        height: 80px;
+        font-family: 'Rationale', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .page-wrapper {
+            margin-right: 0px;
+            display: grid;
+            justify-content: center;
+        }
+    }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rationale&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Konwerter temperatury</title>
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <h1>Kalkulator jednostek temperatury</h1>
+        <div class="temperature_form">
+            <div class="element_up">
+                <h3>Podaj temperturę</h3>
+                <div id="input_wrapper">
+                    <p>Podano niepoprawną wartość</p>
+                    <input type="number" id="temperature" />
+                </div>
+
+
+                <label><input type="radio" value="celsius" name="input_temperature" checked /> Skala Celsjusza</label>
+                <label><input type="radio" value="kelvin" name="input_temperature"/>Skala Kelvina</label>
+                <label><input type="radio" value="fahrenheit" name="input_temperature" />Skala Fahrenhita</label>
+            </div>
+
+            <div class='element_down'>
+                <h3>Przelicz temperturę</h3>
+                <label><input type="radio" value="celsius" name="output_temperature" checked /> Skala Celsjusza</label>
+                <label><input type="radio" value="kelvin" name="output_temperature"/>Skala Kelvina</label>
+                <label><input type="radio" value="fahrenheit" name="output_temperature" />Skala Fahrenhita</label>
+
+            </div>
+            <div class='element_result'>
+                <span id="result"></span>
+            </div>
+        </div>
+        <!-- <footer>
+            <a href="https://pl.freepik.com/darmowe-zdjecie-wektory/zima">Zima plik wektorowy utworzone przez rawpixel.com - pl.freepik.com</a> </footer> -->
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
